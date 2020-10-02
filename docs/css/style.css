@@ -61,6 +61,10 @@ body {
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important; }
 
+errors  {
+  color: #dc3545;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;

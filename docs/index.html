@@ -10,7 +10,7 @@
         <link rel="icon" href="./img/icon.png" />
         <title>Sign Up</title>
     </head>
-    
+
     <body>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"> <a class="navbar-brand" href="index.html">Home</a>
             <button class="navbar-toggler"
@@ -34,23 +34,24 @@
                             <address>Authored By:
 
                                 <a href="mailto:das96@njit.edu">Denis Smirnov</a>
-
                             </address>
+
+                            <script src="js/signup.js"></script>
 
                         </h6>
                         <div class="card-body text-justify">
                             <form>
                                 First name:<br>
-                                <input type="text" name="first"><br>
+                                <input type="text" id="first" name="first"><br>
+                                <errors id="errorF"></errors><br>
                                 Last name:<br>
-                                <input type="text" name="last"><br>
+                                <input type="text" id="last" name="last"><br>
+                                <errors id="errorL"></errors><br>
                                 email:<br>
-                                <input type="text" name="email"><br>
-                                Home town:<br>
-                                <input type="text" name="town"><br>
-                                major:<br>
-                                <input type="text" name="major"><br>
-                                <input type="submit">
+                                <input type="text" id="email" name="email"><br>
+                                <errors id="errorE"></errors><br>
+                                <button>Cancel </button>
+                                <input type="button" value="Sign-Up" onclick="signUpCheck();">
                             </form>
                         </div>
                     </div>
